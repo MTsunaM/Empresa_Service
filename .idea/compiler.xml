@@ -9,15 +9,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="A3Back" />
         <module name="Gateway_service" />
-      </profile>
-      <profile name="Annotation profile for MicroservicoGolpes" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="false">
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.42/lombok-1.18.42.jar" />
-        </processorPath>
         <module name="demo" />
+        <module name="gateway-service" />
       </profile>
     </annotationProcessing>
   </component>
@@ -26,6 +19,7 @@
       <module name="A3Back" options="-parameters" />
       <module name="Gateway_service" options="-parameters" />
       <module name="demo" options="-parameters" />
+      <module name="gateway-service" options="-parameters" />
     </option>
   </component>
 </project>

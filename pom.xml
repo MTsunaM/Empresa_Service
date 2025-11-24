@@ -6,7 +6,7 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>A3back</module>
+        <module>A3Back</module>
         <module>gateway-service</module>
         <module>golpes_service</module>
     </modules>

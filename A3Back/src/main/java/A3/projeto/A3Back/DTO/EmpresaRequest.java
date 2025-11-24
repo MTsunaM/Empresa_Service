@@ -15,7 +15,6 @@ public class EmpresaRequest {
     private String cnpj;
 
     @NotBlank(message = "Senha é obrigatória")
-    @Size(min = 6, message = "Senha deve ter pelo menos 6 caracteres")
     private String password;
 
     // Getters e setters

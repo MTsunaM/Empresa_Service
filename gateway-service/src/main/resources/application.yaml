@@ -1,2 +1,28 @@
 server:
   port: 8080
+
+spring:
+  application:
+    name: gateway-service
+  cloud:
+    gateway:
+      routes:
+        - id: empresa-service
+          uri: http://localhost:8082
+          predicates:
+            - Path=/api/cadastroempresas, /api/auth/**, /api/empresas/**
+        - id: golpe-service
+          uri: http://localhost:8081
+          predicates:
+            - Path=/api/cadastrogolpes, /api/golpes/**, /api/empresa/**
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+              - OPTIONS
+            allowedHeaders: "*"

@@ -22,6 +22,11 @@ public class GolpeController {
     public ResponseEntity<?> cadastrarGolpe(@RequestBody GolpeModel golpe) {
         System.out.println(">>> [GolpeController] Cadastro recebido: " + golpe);
 
+        if (golpe.getEmpresaId() == null) {
+            System.out.println(">>> [GolpeController] Empresa ID não informado");
+            return ResponseEntity.badRequest().body("O ID da empresa é obrigatório");
+        }
+
         if (golpe.getEmpresa() == null || golpe.getEmpresa().trim().isEmpty()) {
             System.out.println(">>> [GolpeController] Empresa não informada");
             return ResponseEntity.badRequest().body("O nome da empresa é obrigatório");
@@ -42,5 +47,10 @@ public class GolpeController {
     @GetMapping("/empresa/{nome}")
     public List<GolpeModel> listarPorEmpresa(@PathVariable String nome) {
         return golpeRepository.findByEmpresaIgnoreCase(nome.trim().toUpperCase());
+    }
+
+    @GetMapping("/empresa/id/{empresaId}")
+    public List<GolpeModel> listarPorEmpresaId(@PathVariable Integer empresaId) {
+        return golpeRepository.findByEmpresaId(empresaId);
     }
 }

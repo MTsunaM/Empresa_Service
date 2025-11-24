@@ -40,9 +40,10 @@ public class SecurityConfig {
                 .sessionManagement(sm -> sm.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(auth -> auth
                         // Endpoints públicos
+                        .requestMatchers("/error").permitAll()                   // Spring error endpoint
                         .requestMatchers("/api/auth/**").permitAll()            // login e validate
-                        .requestMatchers("/api/cadastroempresas/**").permitAll() // cadastro de empresas
-                        .requestMatchers("/api/cadastrogolpes/**").permitAll()   // cadastro de golpes
+                        .requestMatchers("/api/cadastroempresas").permitAll()   // cadastro de empresas (exact match)
+                        .requestMatchers("/api/cadastrogolpes").permitAll()     // cadastro de golpes (exact match)
                         // Qualquer outro endpoint exige token
                         .anyRequest().authenticated()
                 )

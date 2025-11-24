@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: A3.projeto.A3Back.integration.ScamRetrievalIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 19.65 s -- in A3.projeto.A3Back.integration.ScamRetrievalIntegrationTest

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: A3.projeto.A3Back.A3BackApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 33.27 s -- in A3.projeto.A3Back.A3BackApplicationTests
