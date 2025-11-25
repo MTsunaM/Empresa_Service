@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: A3.projeto.A3Back.controller.AuthControllerTest
--------------------------------------------------------------------------------
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.39 s -- in A3.projeto.A3Back.controller.AuthControllerTest

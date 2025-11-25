@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: A3.projeto.A3Back.service.ScamRetrievalServiceTest
--------------------------------------------------------------------------------
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.668 s -- in A3.projeto.A3Back.service.ScamRetrievalServiceTest

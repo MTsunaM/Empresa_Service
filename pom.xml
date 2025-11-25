@@ -6,8 +6,8 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>A3Back</module>
-        <module>gateway-service</module>
+        <module>empresa_service</module>
+        <module>gateway_service</module>
         <module>golpes_service</module>
     </modules>
 </project>
